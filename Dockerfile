@@ -1,12 +1,6 @@
-FROM node:18
+FROM nginx:latest
 
-WORKDIR /app
+COPY app/index.html /usr/share/nginx/html/index.html
 
-COPY package.json .
-RUN npm install
-
-COPY . .
-
-EXPOSE 3000
-
-CMD ["node", "app.js"]
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
