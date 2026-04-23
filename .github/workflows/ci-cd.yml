@@ -82,6 +82,8 @@ jobs:
 
             rm -rf demo-app
 
+            sudo yum install git -y
+            
             echo "Cloning repo..."
             GIT_ASKPASS=true git clone https://github.com/rajatdevops1/demo-app.git
 
