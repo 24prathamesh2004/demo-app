@@ -6,7 +6,7 @@ on:
 
 jobs:
 
-  # 🔨 BUILD + PUSH JOB
+  # 🔨 BUILD + PUSH JOB..
   build:
     runs-on: ubuntu-latest
 
